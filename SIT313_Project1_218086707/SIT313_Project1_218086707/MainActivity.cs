@@ -19,6 +19,12 @@ namespace SIT313_Project1_218086707
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
 
+            Button bt_Login = FindViewById<Button>(Resource.Id.bt_Login);
+            bt_Login.Click += (sender, e) =>
+            {
+
+            };
+
            
         }
 

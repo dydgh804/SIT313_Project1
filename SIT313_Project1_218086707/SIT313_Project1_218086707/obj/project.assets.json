@@ -1538,11 +1538,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\YongHo\\SIT313\\SIT313_Project1_218086707\\SIT313_Project1_218086707\\SIT313_Project1_218086707.csproj",
+      "projectUniqueName": "C:\\Users\\YongHo\\git\\SIT313_Project1\\SIT313_Project1_218086707\\SIT313_Project1_218086707\\SIT313_Project1_218086707.csproj",
       "projectName": "SIT313_Project1_218086707",
-      "projectPath": "C:\\Users\\YongHo\\SIT313\\SIT313_Project1_218086707\\SIT313_Project1_218086707\\SIT313_Project1_218086707.csproj",
+      "projectPath": "C:\\Users\\YongHo\\git\\SIT313_Project1\\SIT313_Project1_218086707\\SIT313_Project1_218086707\\SIT313_Project1_218086707.csproj",
       "packagesPath": "C:\\Users\\YongHo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\YongHo\\SIT313\\SIT313_Project1_218086707\\SIT313_Project1_218086707\\obj\\",
+      "outputPath": "C:\\Users\\YongHo\\git\\SIT313_Project1\\SIT313_Project1_218086707\\SIT313_Project1_218086707\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

@@ -3267,8 +3267,8 @@ namespace SIT313_Project1_218086707
 			// aapt resource value: 0x7F0C0010
 			public const int action_mode_close_button = 2131492880;
 			
-			// aapt resource value: 0x7F020005
-			public const int action_settings = 2130837509;
+			// aapt resource value: 0x7F020007
+			public const int action_settings = 2130837511;
 			
 			// aapt resource value: 0x7F0C0004
 			public const int action_text = 2131492868;
@@ -3308,6 +3308,12 @@ namespace SIT313_Project1_218086707
 			
 			// aapt resource value: 0x7F0C000D
 			public const int browser_actions_menu_view = 2131492877;
+			
+			// aapt resource value: 0x7F020006
+			public const int bt_Join = 2130837510;
+			
+			// aapt resource value: 0x7F020005
+			public const int bt_Login = 2130837509;
 			
 			// aapt resource value: 0x7F0C001A
 			public const int buttonPanel = 2131492890;
@@ -3933,6 +3939,12 @@ namespace SIT313_Project1_218086707
 			// aapt resource value: 0x7F0F002A
 			public const int design_text_input_password_icon = 2131689514;
 			
+			// aapt resource value: 0x7F030004
+			public const int index = 2130903044;
+			
+			// aapt resource value: 0x7F030005
+			public const int menu_page = 2130903045;
+			
 			// aapt resource value: 0x7F0F002B
 			public const int mtrl_layout_snackbar = 2131689515;
 			
@@ -3956,6 +3968,9 @@ namespace SIT313_Project1_218086707
 			
 			// aapt resource value: 0x7F0F0006
 			public const int notification_template_part_time = 2131689478;
+			
+			// aapt resource value: 0x7F030006
+			public const int registration = 2130903046;
 			
 			// aapt resource value: 0x7F0F0033
 			public const int select_dialog_item_material = 2131689523;
