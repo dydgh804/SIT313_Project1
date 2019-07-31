@@ -8,8 +8,7 @@
     android:padding="10dp"
     android:orientation="vertical"
     android:background="#ffffb74d"
-    android:gravity="center_horizontal"
-    android:fadingEdge="none"
+    android:gravity="center_horizontal"   
     >
     <ImageView
         android:layout_marginTop="20dp"
@@ -23,7 +22,7 @@
         android:layout_marginTop ="40dp"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Foods & Drinks"
+        android:text="Foods &apos; Drinks"
         android:textSize="25dp"
         android:fontFamily="monospace"
         android:textStyle="bold"
@@ -58,7 +57,4 @@
         android:textColor="#ffffffff" 
     />
         
-
-
-
 </LinearLayout>

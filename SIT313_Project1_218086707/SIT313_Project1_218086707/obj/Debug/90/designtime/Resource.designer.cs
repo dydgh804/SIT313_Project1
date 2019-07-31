@@ -3267,8 +3267,8 @@ namespace SIT313_Project1_218086707
 			// aapt resource value: 0x7F0C0010
 			public const int action_mode_close_button = 2131492880;
 			
-			// aapt resource value: 0x7F020007
-			public const int action_settings = 2130837511;
+			// aapt resource value: 0x7F020018
+			public const int action_settings = 2130837528;
 			
 			// aapt resource value: 0x7F0C0004
 			public const int action_text = 2131492868;
@@ -3309,11 +3309,26 @@ namespace SIT313_Project1_218086707
 			// aapt resource value: 0x7F0C000D
 			public const int browser_actions_menu_view = 2131492877;
 			
-			// aapt resource value: 0x7F020006
-			public const int bt_Join = 2130837510;
+			// aapt resource value: 0x7F020010
+			public const int bt_AboutUs = 2130837520;
 			
-			// aapt resource value: 0x7F020005
-			public const int bt_Login = 2130837509;
+			// aapt resource value: 0x7F020009
+			public const int bt_Book = 2130837513;
+			
+			// aapt resource value: 0x7F020007
+			public const int bt_Join = 2130837511;
+			
+			// aapt resource value: 0x7F020006
+			public const int bt_Login = 2130837510;
+			
+			// aapt resource value: 0x7F020008
+			public const int bt_Menu = 2130837512;
+			
+			// aapt resource value: 0x7F020016
+			public const int bt_Reset = 2130837526;
+			
+			// aapt resource value: 0x7F020017
+			public const int bt_Submit = 2130837527;
 			
 			// aapt resource value: 0x7F0C001A
 			public const int buttonPanel = 2131492890;
@@ -3372,6 +3387,18 @@ namespace SIT313_Project1_218086707
 			// aapt resource value: 0x7F0C000A
 			public const int end = 2131492874;
 			
+			// aapt resource value: 0x7F020013
+			public const int et_Id = 2130837523;
+			
+			// aapt resource value: 0x7F020012
+			public const int et_Name = 2130837522;
+			
+			// aapt resource value: 0x7F020014
+			public const int et_Pw = 2130837524;
+			
+			// aapt resource value: 0x7F020015
+			public const int et_Pwc = 2130837525;
+			
 			// aapt resource value: 0x7F0C002E
 			public const int expanded_menu = 2131492910;
 			
@@ -3417,8 +3444,8 @@ namespace SIT313_Project1_218086707
 			// aapt resource value: 0x7F020003
 			public const int input_id = 2130837507;
 			
-			// aapt resource value: 0x7F020004
-			public const int input_pw = 2130837508;
+			// aapt resource value: 0x7F020005
+			public const int input_pw = 2130837509;
 			
 			// aapt resource value: 0x7F0C000D
 			public const int italic = 2131492877;
@@ -3431,6 +3458,9 @@ namespace SIT313_Project1_218086707
 			
 			// aapt resource value: 0x7F0C003D
 			public const int largeLabel = 2131492925;
+			
+			// aapt resource value: 0x7F020011
+			public const int layout_Menu = 2130837521;
 			
 			// aapt resource value: 0x7F0C0010
 			public const int left = 2131492880;
@@ -3614,6 +3644,9 @@ namespace SIT313_Project1_218086707
 			
 			// aapt resource value: 0x7F0C007A
 			public const int submit_area = 2131492986;
+			
+			// aapt resource value: 0x7F020004
+			public const int sw_KeepID = 2130837508;
 			
 			// aapt resource value: 0x7F0C007B
 			public const int tabMode = 2131492987;

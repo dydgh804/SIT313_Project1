@@ -570,3 +570,6 @@ C:\Users\YongHo\git\SIT313_Project1\SIT313_Project1_218086707\SIT313_Project1_21
 C:\Users\YongHo\git\SIT313_Project1\SIT313_Project1_218086707\SIT313_Project1_218086707\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\YongHo\git\SIT313_Project1\SIT313_Project1_218086707\SIT313_Project1_218086707\obj\Debug\90\android\assets\System.ComponentModel.Composition.dll
 C:\Users\YongHo\git\SIT313_Project1\SIT313_Project1_218086707\SIT313_Project1_218086707\obj\Debug\90\android\assets\System.Runtime.dll
+C:\Users\YongHo\git\SIT313_Project1\SIT313_Project1_218086707\SIT313_Project1_218086707\obj\Debug\90\res\layout\registration.xml
+C:\Users\YongHo\git\SIT313_Project1\SIT313_Project1_218086707\SIT313_Project1_218086707\obj\Debug\90\res\layout\index.xml
+C:\Users\YongHo\git\SIT313_Project1\SIT313_Project1_218086707\SIT313_Project1_218086707\obj\Debug\90\res\layout\menu_page.xml
