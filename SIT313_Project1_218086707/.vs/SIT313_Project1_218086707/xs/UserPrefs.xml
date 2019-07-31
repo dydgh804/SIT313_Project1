@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{9A1D4C2B-7851-44BB-AFF5-A7A5C2E3A2E8}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SIT313_Project1_218086707/indexActivity.cs">
+    <Files>
+      <File FileName="SIT313_Project1_218086707/MainActivity.cs" Line="41" Column="21" />
+      <File FileName="SIT313_Project1_218086707/regiActivity.cs" Line="58" Column="21" />
+      <File FileName="SIT313_Project1_218086707/Properties/AndroidManifest.xml" Line="15" Column="5" />
+      <File FileName="SIT313_Project1_218086707/indexActivity.cs" Line="14" Column="33" />
+      <File FileName="SIT313_Project1_218086707/menuActivity.cs" Line="13" Column="41" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SIT313_Project1_218086707" expanded="True">
+            <Node name="SIT313_Project1_218086707" expanded="True">
+              <Node name="Resources" expanded="True">
+                <Node name="layout" expanded="True" />
+              </Node>
+              <Node name="indexActivity.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.SIT313__Project1__218086707 AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.my_device" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

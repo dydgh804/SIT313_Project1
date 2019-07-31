@@ -3,7 +3,7 @@
   <PropertyGroup>
     <SelectedDevice>my_device</SelectedDevice>
     <DefaultDevice>my_device</DefaultDevice>
-    <AndroidDesignerPreferredTheme>AppTheme</AndroidDesignerPreferredTheme>
+    <AndroidDesignerPreferredTheme>Theme.AppCompat.Light.NoActionBar</AndroidDesignerPreferredTheme>
     <AndroidDesignerPreferredDevice>Nexus 4</AndroidDesignerPreferredDevice>
   </PropertyGroup>
 </Project>
