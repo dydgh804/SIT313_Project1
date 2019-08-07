@@ -7,18 +7,33 @@ using Android.Support.Design.Widget;
 using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
+using SQLite;
 
 namespace SIT313_Project1_218086707
 {
+
+
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
+        string DBPath = System.IO.Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments), "CustomerDB.db");
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
+
+            //DB existance check
+            var db = new SQLiteConnection(DBPath);
+            if(!System.IO.File.Exists(DBPath))
+            {
+                Console.WriteLine("Database Create:" + DBPath);
+            }
+            else
+            {
+                Console.WriteLine("Already Database Created: " + DBPath);
+            }
 
             EditText tv_Id = FindViewById<EditText>(Resource.Id.input_id);
             EditText tv_Pw = FindViewById<EditText>(Resource.Id.input_pw);
@@ -28,6 +43,8 @@ namespace SIT313_Project1_218086707
             Button bt_Login = FindViewById<Button>(Resource.Id.bt_Login);
             Button bt_Join = FindViewById<Button>(Resource.Id.bt_Join);
 
+    
+            db.CreateTable<CustomerTable>();
 
             bt_Login.Click += delegate 
             {
@@ -43,8 +60,34 @@ namespace SIT313_Project1_218086707
                 }
                 else
                 {
-                    var intent = new Intent(this, typeof(indexActivity));
-                    StartActivity(intent);
+                    var checkID = from s in db.Table<CustomerTable>() where s.CustomerID.Equals(tv_Id.Text) select s;
+                    int cnt=0;
+                    string tablePW = null; 
+                    foreach (var s in checkID)
+                    {
+                        cnt++;
+                        tablePW = s.CustomerPW;
+                    }
+
+                    if (cnt == 0)
+                    {
+                        var errorToast = Toast.MakeText(ApplicationContext, "This Id is not exsist ", ToastLength.Short);
+                        errorToast.Show();
+                    }
+                    else
+                    {
+                        if(tablePW == tv_Pw.Text )
+                        {
+                            var intent = new Intent(this, typeof(indexActivity));
+                            StartActivity(intent);
+                        }
+                        else
+                        {
+                            var errorToast = Toast.MakeText(ApplicationContext, "Check Your Password " , ToastLength.Short);
+                            errorToast.Show();
+                        }
+                    }
+
                 }
 
             };

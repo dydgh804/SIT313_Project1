@@ -7,12 +7,14 @@ using Android.Support.Design.Widget;
 using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
+using SQLite;
 
 namespace SIT313_Project1_218086707
 {
     [Activity(Label = "@string/app_name")]
     public class regiActivity : Activity
     {
+        string DBPath = System.IO.Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments), "CustomerDB.db");
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -53,10 +55,51 @@ namespace SIT313_Project1_218086707
                 }
                 else
                 {
-                    var toast = Toast.MakeText(ApplicationContext, "Registration Success!!", ToastLength.Short);
-                    toast.Show();
-                    var intent = new Intent(this, typeof(MainActivity));
-                    StartActivity(intent);
+                    var db = new SQLiteConnection(DBPath);
+                    db.CreateTable<CustomerTable>();
+
+                    if(db.Table<CustomerTable>().Count() ==0)
+                    {
+                        var newCTable = new CustomerTable();
+                        newCTable.CustomerName = et_Name.Text;
+                        newCTable.CustomerID = et_Id.Text;
+                        newCTable.CustomerPW = et_Pw.Text;
+
+                        db.Insert(newCTable);
+                     }
+                    else
+                    {
+                      //  string sqlquery = "Select * from CustomerTable where CustomerID '"+ et_Id +"' ;";
+                        var checkID = from s in db.Table<CustomerTable>() where s.CustomerID.Equals(et_Id.Text) select s;
+                        int cnt = 0;
+                        foreach(var s in checkID)
+                        {
+                            cnt ++;
+                        }
+
+                        if (cnt>0)
+                        {
+                            var errorToast = Toast.MakeText(ApplicationContext, "This Id is already exist, please use other Id ", ToastLength.Short);
+                            errorToast.Show();
+                        }
+                        else
+                        {
+                            var newCTable = new CustomerTable();
+                            newCTable.CustomerName = et_Name.Text;
+                            newCTable.CustomerID = et_Id.Text;
+                            newCTable.CustomerPW = et_Pw.Text;
+
+                            db.Insert(newCTable);
+
+                            var toast = Toast.MakeText(ApplicationContext, "Registration Success!!", ToastLength.Short);
+                            toast.Show();
+                            var intent = new Intent(this, typeof(MainActivity));
+                            StartActivity(intent);
+                        }
+
+                    }
+
+                   
                 }
 
             };
